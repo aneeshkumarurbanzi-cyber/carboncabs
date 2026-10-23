@@ -1,0 +1,29 @@
+# Carbon Cabs - Robots.txt
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /.next/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*?*sort=
+Disallow: /*?*filter=
+
+# Googlebot specific rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bingbot specific rules
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Slow down aggressive crawlers
+User-agent: MJ12bot
+Crawl-delay: 10
+
+
+# Sitemap location
+Sitemap: https://carboncabs.com/sitemap.xml
