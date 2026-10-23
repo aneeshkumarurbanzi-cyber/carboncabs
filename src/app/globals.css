@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+body {
+  color: white;
+  background: #181717;
+  font-family: "Inter", sans-serif;
+}
+
+
+
+.container-padding {
+  padding-left: 1rem;   /* Mobile default */
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-padding {
+    padding-left: 2.5rem;  /* sm screens */
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-padding {
+    padding-left: 5rem;  /* lg/laptop screens = px-20 */
+    padding-right: 5rem;
+    padding-top: 2.5rem;  /* py-10 */
+    padding-bottom: 2.5rem;
+  }
+}
+
+
+.heading-h2 {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 600; /* font-semibold */
+  line-height: 2rem; /* leading-8 */
+}
+
+@media (min-width: 640px) {
+  .heading-h2 {
+    font-size: 1.875rem; /* text-3xl */
+    line-height: 2.25rem; /* leading-9 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .heading-h2 {
+    font-size: 2.25rem; /* text-4xl */
+    line-height: 2.5rem; /* leading-10 */
+  }
+}
+
+
+.paragraph-p {
+  font-size: 0.875rem; /* text-base */
+  line-height: 1.5rem; /* leading-6 */
+}
+
+@media (min-width: 640px) {
+  .paragraph-p {
+    font-size: 1.125rem; /* text-lg */
+    line-height: 1.75rem; /* leading-7 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .paragraph-p {
+    font-size: 1.25rem; /* text-lg */
+    line-height: 1.75rem; /* leading-7 */
+  }
+}
